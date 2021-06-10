@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/* root setup */
+
+:root {
+  /* colors setup */
+  --light-cyan: #52e2f9;
+  --light-blue: #d8ecfc;
+  --dark-blue: #07375f;
+  --purple: #a85cec;
+  --grey: #98999e;
+  --dark: #474747;
+
+  /* font setup */
+  --text-size: 20px;
+  --normal-size: 25px;
+  --title-size: 30px;
+  --big-size: 50px;
+  --extra-big-size: 55px;
+  --font-family: "Open Sans", sans-serif;
+
+  /* button */
+  --round: 50px;
+  --normal-radius: 7px;
+}

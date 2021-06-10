@@ -1,0 +1,95 @@
+@import "main.css";
+
+/* basic setups */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  list-style: none;
+  font-style: normal;
+}
+
+body,
+html {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+
+.logo {
+  margin-right: 130px;
+  margin-left: 20%;
+  font-size: var(--title-size);
+  font-weight: 600;
+  line-height: 41px;
+  color: white;
+  cursor: pointer;
+}
+
+#io {
+  color: var(--light-cyan);
+}
+
+.navbar-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  max-width: 950px;
+}
+
+#home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.navbar-container {
+  margin-top: 5px;
+}
+
+.navbar-link {
+  margin-right: 100px;
+  font-size: var(--text-size);
+  font-weight: normal;
+  line-height: 27px;
+  color: white;
+}
+
+/* menu */
+
+.menu-toggle-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#menu-toggle {
+  margin-top: 5px;
+  margin-right: 20%;
+}
+
+#menu-container,
+#menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1163px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+}
