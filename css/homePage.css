@@ -36,13 +36,10 @@ a {
   color: var(--light-cyan);
 }
 
-.navbar-header {
+.nav-header {
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  max-width: 950px;
+  z-index: 100;
 }
 
 #home-navbar {
@@ -92,4 +89,25 @@ a {
   .navbar-container {
     display: none;
   }
+}
+
+/* main */
+
+#main-container {
+  position: relative;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+}
+
+#home-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: cover;
 }
