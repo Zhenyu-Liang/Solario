@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/homePage.css">
 
+    <!-- JS -->
+    <script src="js/menu.js" defer></script>
+
     <title>Solario</title>
 
 </head>
@@ -19,21 +22,29 @@
     <!-- Navbar -->
     <header class="nav-header">
         <nav class="navbar" id="home-navbar">
+
+            <!-- Normal Navbar -->
             <a class="logo" href="#home">Solar<span id="io">io</span></a>
             <div class="navbar-container">
                 <a href="#about" class="navbar-link">About</a>
                 <a href="#planets" class="navbar-link">Planets</a>
+                <a href="#games" class="navbar-link">Games</a>
                 <a href="#news" class="navbar-link">News</a>
                 <a href="#contact" class="navbar-link">Contact</a>
             </div>
+
+            <!-- Menu Icon -->
             <div class="menu-toggle-icon" id="menu-toggle">
                 <i class='bx bx-menu'></i>
             </div>
-            <div id="menu-container">
-                <a href="#about" class="menu-link">About</a>
-                <a href="#planets" class="menu-link">Planets</a>
-                <a href="#news" class="menu-link">News</a>
-                <a href="#contact" class="menu-link">Contact</a>
+
+            <!-- Menu Box for Responsiveness-->
+            <div id="menu-container" class="menu-box">
+                <a href="#about" class="menu-link add-margin-menu"><i class='bx bx-id-card'></i>About</a>
+                <a href="#planets" class="menu-link"><i class='bx bxs-planet' ></i>Planets</a>
+                <a href="#games" class="menu-link"><i class='bx bxs-game' ></i>Games</a>
+                <a href="#news" class="menu-link"><i class='bx bxs-news' ></i>News</a>
+                <a href="#contact" class="menu-link"><i class='bx bxs-contact' ></i>Contact</a>
             </div>
         </nav>
     </header>

@@ -23,8 +23,8 @@ a {
 /* navbar */
 
 .logo {
-  margin-right: 130px;
   margin-left: 20%;
+  margin-right: 5px;
   font-size: var(--title-size);
   font-weight: 600;
   line-height: 41px;
@@ -47,8 +47,8 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 125px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navbar-container {
@@ -56,6 +56,7 @@ a {
 }
 
 .navbar-link {
+  position: relative;
   margin-right: 100px;
   font-size: var(--text-size);
   font-weight: normal;
@@ -63,17 +64,56 @@ a {
   color: white;
 }
 
+.navbar-link:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  border-bottom: 3px solid var(--light-cyan);
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(0, 1);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: scale(0, 1);
+}
+
+.navbar-link:hover:after {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
 /* menu */
 
 .menu-toggle-icon {
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
   cursor: pointer;
   font-size: 30px;
+}
+
+.menu-toggle-icon:hover {
+  color: white;
+}
+
+.bx,
+.bx-id-card,
+.bxs-planet,
+.bxs-game,
+.bxs-news,
+.bxs-contact {
+  color: white;
+  position: relative;
+  top: 2px;
+  right: 8px;
 }
 
 #menu-toggle {
   margin-top: 5px;
   margin-right: 20%;
+  order: 3;
 }
 
 #menu-container,
@@ -81,14 +121,48 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 1163px) {
+@media screen and (max-width: 1480px) {
   #menu-toggle {
     display: block;
+    transition: 0.4s;
   }
 
   .navbar-container {
     display: none;
+    transition: 1s;
   }
+}
+
+.menu-link {
+  display: block;
+  color: white;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-size: var(--text-size);
+}
+
+.menu-link:hover {
+  color: var(--light-cyan);
+  transition: 0.4s;
+}
+
+.menu-box {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  right: 0;
+  width: 40%;
+  border-radius: 16px;
+  text-align: center;
+  padding: 12px;
+  background: #07375f;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+.add-margin-menu {
+  margin-top: 20px;
 }
 
 /* main */
