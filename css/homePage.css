@@ -213,7 +213,7 @@ a {
   z-index: 0;
 }
 
-#main-content {
+.main-content {
   color: white;
   position: relative;
   height: 100vh;
@@ -233,7 +233,7 @@ a {
   line-height: 75px;
 }
 
-#main-quote-container {
+.main-quote-container {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -278,11 +278,15 @@ a {
   }
 }
 
-@media screen and (max-width: 1325px), (max-height: 700px) {
+@media screen and (max-width: 1335px), (max-height: 700px) {
   :root {
-    --text-size: 20px;
+    --text-size: 18px;
     --big-size: 45px;
-    --extra-big-size: 50px;
+    --extra-big-size: 45px;
+  }
+
+  .main-text {
+    line-height: normal;
   }
 }
 
@@ -305,18 +309,18 @@ a {
     line-height: normal;
   }
 
-  #main-quote-container {
+  .main-quote-container {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 1070px) {
-  #earth-img-container {
+  .img-container {
     display: none;
   }
 
-  #main-content {
+  .main-content {
     justify-content: center;
   }
 
@@ -328,19 +332,19 @@ a {
   }
 }
 
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 645px) {
   :root {
     --text-size: 15px;
     --title-size: 20px;
-    --big-size: 40px;
-    --extra-big-size: 40px;
+    --big-size: 35px;
+    --extra-big-size: 35px;
   }
 
   .main-text {
     line-height: normal;
   }
 
-  #main-quote-container {
+  .main-quote-container {
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -350,8 +354,17 @@ a {
   :root {
     --text-size: 13px;
     --title-size: 22px;
-    --big-size: 40px;
-    --extra-big-size: 40px;
+    --big-size: 35px;
+    --extra-big-size: 35px;
+  }
+
+  .main-text {
+    line-height: normal;
+  }
+
+  .main-quote-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -463,7 +476,45 @@ a {
   z-index: 0;
 }
 
+#planets-main-text {
+  line-height: 50px;
+}
+
+.planets-text {
+  position: relative;
+  right: 150px;
+}
+
+#sun-img {
+  position: relative;
+  top: 25px;
+}
+
+#learn-more-planets-btn {
+  width: 230px;
+  height: 75px;
+  color: white;
+  background: var(--purple);
+  box-shadow: 0px 10px 186px #56a3b4;
+  border-radius: var(--round);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  cursor: pointer;
+  overflow: hidden;
+  background: linear-gradient(to right, #9232e7 50%, var(--purple) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+#learn-more-planets-btn:hover {
+  background-position: left bottom;
+  transition: all 0.25s ease-out;
+}
+
 /* Responsive */
+
 #hidden-small-screen-text {
   display: none;
 }
