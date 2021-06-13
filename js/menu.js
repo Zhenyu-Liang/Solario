@@ -1,6 +1,8 @@
 let menuBtn = document.getElementById("menu-toggle");
 let menuContainer = document.getElementById("menu-container");
 let menuIsOpen = false;
+let exploreBtn = document.getElementById("explore-btn");
+let homeDownBtn = document.getElementById("home-down-btn");
 
 function showMenu() {
 	if(document.body.clientWidth > 1480) {
@@ -8,6 +10,7 @@ function showMenu() {
 		menuContainer.style.top = "-100%";
 		menuIsOpen = false;
 		menuContainer.style.transition = "all 0.4s";
+		menuBtn.innerHTML = "<i class='bx bx-menu'></i>";
 	}
 }
 
@@ -32,3 +35,12 @@ menuBtn.addEventListener("click", () => {
 		menuBtn.innerHTML = "<i class='bx bx-x' ></i>";
 	}
 })
+
+
+exploreBtn.addEventListener("click", () => {
+	window.location.href = "#planets";
+})
+
+homeDownBtn.addEventListener("click", () => {
+	window.location.href = "#planets"
+});

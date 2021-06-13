@@ -383,6 +383,68 @@ a {
   }
 }
 
+.bx-chevron-down {
+  color: white;
+}
+
+@keyframes downBtnMove {
+  0% {
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: 40px;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes downBtnMove {
+  0% {
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: 40px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes downBtnMove {
+  0% {
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: 40px;
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes downBtnMove {
+  0% {
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: 40px;
+    opacity: 1;
+  }
+}
+
+#home-down-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: downBtnMove 1.5s infinite;
+  -webkit-animation: downBtnMove 1.5s infinite;
+  -moz-animation: downBtnMove 1.5s infinite;
+  -ms-animation: downBtnMove 1.5s infinite;
+  -o-animation: downBtnMove 1.5s infinite;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 /* Planets Page */
 
 #planets {
