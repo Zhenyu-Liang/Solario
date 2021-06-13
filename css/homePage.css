@@ -316,12 +316,8 @@ a {
 }
 
 @media screen and (max-width: 1070px) {
-  .img-container {
+  #earth-img-container {
     display: none;
-  }
-
-  .main-content {
-    justify-content: center;
   }
 
   :root {
@@ -511,6 +507,52 @@ a {
 #learn-more-planets-btn:hover {
   background-position: left bottom;
   transition: all 0.25s ease-out;
+}
+
+@media screen and (max-width: 1420px) {
+  #sun-img {
+    width: 700px;
+    height: 603.76px;
+  }
+}
+
+@media screen and (max-width: 1335px), (max-height: 651px) {
+  #planets-main-quote-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px), (max-height: 651px) {
+  #sun-img {
+    width: 600px;
+    height: 503.76px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  #sun-img {
+    width: 510px;
+    height: 403.76px;
+  }
+}
+
+@media screen and (max-width: 1140px), (max-height: 540px) {
+  #sun-img-container {
+    display: none;
+  }
+
+  .planets-text {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  #learn-more-planets-btn {
+    font-size: 20px;
+    width: 200px;
+    height: 55px;
+  }
 }
 
 /* Responsive */
