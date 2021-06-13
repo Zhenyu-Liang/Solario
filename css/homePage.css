@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: black;
   overflow-x: hidden;
@@ -23,6 +27,26 @@ a {
 .btn {
   border-radius: var(--round);
   border: none;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* navbar */
@@ -164,13 +188,14 @@ a {
   background: #07375f;
   transition: 0.4s;
   z-index: 100;
+  box-shadow: 0px 10px 186px #56a3b4;
 }
 
 .add-margin-menu {
   margin-top: 20px;
 }
 
-/* main */
+/* home page */
 
 #home {
   position: relative;
@@ -255,8 +280,7 @@ a {
 
 @media screen and (max-width: 1325px), (max-height: 700px) {
   :root {
-    --text-size: 15px;
-    --title-size: 25px;
+    --text-size: 20px;
     --big-size: 45px;
     --extra-big-size: 50px;
   }
@@ -271,8 +295,8 @@ a {
 
 @media screen and (max-width: 1150px) {
   :root {
-    --text-size: 15px;
-    --title-size: 25px;
+    --text-size: 16px;
+    --title-size: 30px;
     --big-size: 45px;
     --extra-big-size: 40px;
   }
@@ -357,6 +381,24 @@ a {
     width: 168px;
     height: 65px;
   }
+}
+
+/* Planets Page */
+
+#planets {
+  position: relative;
+  height: 100vh;
+}
+
+#planets-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: cover;
+  z-index: 0;
 }
 
 /* Responsive */
