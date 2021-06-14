@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homePage.css') }}">
 
     <!-- JS -->
-    <script src="js/menu.js" defer></script>
+    <script src="{{ url_for('static', filename='js/menu.js') }}" defer></script>
 
     <title>Solario</title>
 
@@ -53,7 +53,7 @@
     <main id="main-container">
         <!-- Home Page -->
         <section id="home" class="home">
-            <img id="home-background" src="img/home_img/SpaceBackground1.png" alt="Refresh Page">
+            <img id="home-background" src="{{ url_for('static', filename='img/home_img/SpaceBackground1.png') }}" alt="Refresh Page">
             <div id="home-main-content" class="main-content">
                 <div class="home-text">
                     <div id="home-main-text-container">
@@ -75,7 +75,7 @@
                 </div>
 
                 <div id="earth-img-container" class="img-container">
-                    <img id="earth-img" class="planet-img" src="img/planets/earth.png" alt="Refresh Page">
+                    <img id="earth-img" class="planet-img" src="{{ url_for('static', filename='img/planets/earth.png') }}" alt="Refresh Page">
                 </div>
             </div>
 
@@ -86,10 +86,10 @@
 
         <!-- Planets Page -->
         <section id="planets" class="planets">
-            <img id="planets-background" src="img/home_img/SpaceBackground2.png" alt="Refresh Page">
+            <img id="planets-background" src="{{ url_for('static', filename='img/home_img/SpaceBackground2.png') }}" alt="Refresh Page">
             <div id="planets-main-content" class="main-content">
                 <div id="sun-img-container" class="img-container">
-                    <img class="planet-img" id="sun-img" src="img/planets/sun.png" alt="Refresh Page">
+                    <img class="planet-img" id="sun-img" src="{{ url_for('static', filename='img/planets/sun.png') }}" alt="Refresh Page">
                 </div>
                 <div class="planets-text">
                     <div id="planets-main-text-container">
@@ -111,7 +111,7 @@
 
         <!-- News Page -->
         <section id="news" class="news">
-            <img id="news-background" src="img/home_img/SpaceBackground3.png" alt="Refresh Page">
+            <img id="news-background" src="{{ url_for('static', filename='img/home_img/SpaceBackground3.png') }}" alt="Refresh Page">
             <div id="news-main-content" class="main-content">
                 <div class="news-text">
                     <div id="news-main-text-container">
@@ -126,7 +126,7 @@
                     <button id="learn-more-news-btn" class="btn">Learn More</button> 
                 </div>
                 <div id="moon-img-container" class="img-container">
-                    <img id="moon-img" src="img/planets/moon.png" alt="Refresh Page">
+                    <img id="moon-img" src="{{ url_for('static', filename='img/planets/moon.png') }}" alt="Refresh Page">
                 </div>
             </div>
         </section>
