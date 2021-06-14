@@ -132,6 +132,25 @@
         </section>
 
         <!-- Contact Page --> 
+        <section id="contact" class="contact">
+            <img id="contact-background" src="{{ url_for('static', filename='img/home_img/SpaceBackground4.png') }}" alt="Refresh Page">
+            <div id="main-form-container">
+                <h1 id="main-contact-title">Contact Us</h1>
+                    <br>
+                <h3 id="contact-sub-text">
+                    Feel free to contact us if you have any questions/concerns.
+                </h3>
+                <form id="contact-form" method="POST" onsubmit="return false">
+                    <input id="user-name" name="name" type="text" placeholder="Enter Your Name">
+                    <br>
+                    <input id="user-email" name="email" type="text" placeholder="Enter Your Email">
+                    <br>
+                    <textarea id="user-message" name="message" rows="5" cols="60" placeholder="Enter Your Message"></textarea>
+                    <br>
+                    <input id="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Text for Small Screens -->
