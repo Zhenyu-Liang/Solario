@@ -1,5 +1,7 @@
 .history
 Pipfile
 Pipfile.lock
-.vscode
 __pycache__
+public/__pycache__
+.vscode
+*.db

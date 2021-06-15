@@ -14,6 +14,7 @@
 
     <!-- JS -->
     <script src="{{ url_for('static', filename='js/menu.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}" defer></script>
 
     <title>Solario</title>
 
@@ -140,7 +141,7 @@
                 <h3 id="contact-sub-text">
                     Feel free to contact us if you have any questions/concerns.
                 </h3>
-                <form id="contact-form" method="POST" onsubmit="return false">
+                <form id="contact-form" method="POST" >
                     <input id="user-name" name="name" type="text" placeholder="Enter Your Name">
                     <br>
                     <input id="user-email" name="email" type="text" placeholder="Enter Your Email">
