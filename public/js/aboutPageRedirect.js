@@ -34,3 +34,11 @@ for (let contactLink of contactLinks) {
 	contactLink.setAttribute("href", window.location.protocol + "//" + window.location.host + "/#contact");
 }
 
+/* Redirect Game Page */
+
+
+let gameLinks = document.querySelectorAll(".game-link");
+
+for (let gameLink of gameLinks) {
+	gameLink.setAttribute("href", window.location.protocol + "//" + window.location.host + "/game");
+}

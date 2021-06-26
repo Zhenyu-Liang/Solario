@@ -18,6 +18,7 @@ for (let item of gamePageLinks) {
 
 let exploreBtn = document.getElementById("explore-btn");
 let homeDownBtn = document.getElementById("home-down-btn");
+let newsBtn = document.getElementById("learn-more-news-btn");
 
 exploreBtn.addEventListener("click", () => {
 	window.location.href = "#planets";
@@ -27,3 +28,6 @@ homeDownBtn.addEventListener("click", () => {
 	window.location.href = "#planets"
 });
 
+newsBtn.addEventListener("click", () => {
+	window.location.href = "https://www.space.com/"
+})
