@@ -1,0 +1,43 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Charcoal, sans-serif;
+  list-style: none;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#main-game {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#score-display {
+  font-size: 32px;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  text-align: left;
+  z-index: 50;
+}
+
+.score {
+  padding: 10px;
+}
+
+.spaceship {
+  background-image: url("../img/game/playership.png");
+  width: 98px;
+  height: 75px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 30;
+}

@@ -6,6 +6,14 @@ for (let item of aboutPageLinks) {
 	item.setAttribute("href", window.location.protocol + "//" + window.location.host + "/about/");
 }
 
+/* Games Page Redirect */
+
+let gamePageLinks = document.querySelectorAll(".game-page-link");
+
+for (let item of gamePageLinks) {
+	item.setAttribute("href", window.location.protocol + "//" + window.location.host + "/game/");
+}
+
 /* Button Redirect */
 
 let exploreBtn = document.getElementById("explore-btn");
@@ -18,3 +26,4 @@ exploreBtn.addEventListener("click", () => {
 homeDownBtn.addEventListener("click", () => {
 	window.location.href = "#planets"
 });
+
