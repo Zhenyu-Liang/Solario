@@ -1,3 +1,7 @@
+let planetName = document.getElementById("planet-name");
+let planetInformation = document.getElementById("planet-information");
+let planetImage = document.getElementById("planet-img");
+
 let currentPlanet = 0;
 const planetOrder = [
 	"sun",
@@ -41,6 +45,11 @@ function changePlanet() {
 	currentPlanet = planetOrder.indexOf(currentViewPlanetID.substring(0, currentViewPlanetID.length - 5));
 	currentViewPlanet.classList.add("viewing");
 	changeViewPlanet("add");
+
+	let currentPlanetData = planetsData[planetOrder[currentPlanet]];
+	planetName.innerHTML = currentPlanetData.title;
+	planetInformation.innerHTML = currentPlanetData.information;
+	planetImage.src = currentPlanetData.img;
 }
 
 
@@ -106,3 +115,4 @@ backBtn.addEventListener("click", () => {
 	changeViewPlanet("add");
 
 })
+
