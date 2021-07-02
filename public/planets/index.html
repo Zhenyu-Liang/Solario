@@ -9,7 +9,13 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- JS -->
-	<script src="js/planets.js"></script>
+    <script src="js/data.js" defer></script>
+	<script src="js/planets.js" defer></script>
+	<script src="../js/menu.js" defer></script>
+	<script src="js/redirect.js" defer></script>
+
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
 	<title>Planets</title>
 </head>
@@ -22,13 +28,13 @@
         <nav class="navbar" id="home-navbar">
 
             <!-- Normal Navbar -->
-            <a class="logo" href="#home">Solar<span id="io">io</span></a>
+            <a id="home-link" class="logo" href="#home">Solar<span id="io">io</span></a>
             <div class="navbar-container">
                 <a href="#about" class="navbar-link about-page-link">About</a>
-                <a href="#planets" class="navbar-link">Planets</a>
+                <a href="#" class="navbar-link">Planets</a>
                 <a href="#games" class="navbar-link game-page-link">Games</a>
-                <a href="#news" class="navbar-link">News</a>
-                <a href="#contact" class="navbar-link">Contact</a>
+                <a href="https://space.com" class="navbar-link">News</a>
+                <a href="#contact" class="navbar-link contact-page-link">Contact</a>
             </div>
 
             <!-- Menu Icon -->
@@ -41,11 +47,57 @@
                 <a href="#about" class="menu-link add-margin-menu about-page-link"><i class='bx bx-id-card'></i>About</a>
                 <a href="#planets" class="menu-link"><i class='bx bxs-planet' ></i>Planets</a>
                 <a href="#games" class="menu-link game-page-link"><i class='bx bxs-game' ></i>Games</a>
-                <a href="#news" class="menu-link"><i class='bx bxs-news' ></i>News</a>
-                <a href="#contact" class="menu-link"><i class='bx bxs-contact' ></i>Contact</a>
+                <a href="https://space.com" class="menu-link"><i class='bx bxs-news' ></i>News</a>
+                <a href="#contact" class="menu-link contact-page-link"><i class='bx bxs-contact' ></i>Contact</a>
             </div>
         </nav>
     </header>
+
+    <button id="simulation-btn">simulation</button>
+    <main id="main-content-box">
+        <div id="planets-navbar">
+            <div class="planets-icon-container viewing">
+                <img id="sun-icon" class="planets-icon" src="img/planets_icons/sun.png" alt="Refresh Page">
+            </div>
+            <div class="planets-icon-container">
+                <img id="mercury-icon" class="planets-icon" src="img/planets_icons/mercury.png" alt="Refresh Page" width="55" height="55">
+            </div>
+            <div class="planets-icon-container">
+                <img id="venus-icon" class="planets-icon" src="img/planets_icons/venus.png" alt="Refresh Page">
+            </div class="planets-icon-container">
+            <div class="planets-icon-container">
+                <img id="earth-icon" class="planets-icon" src="img/planets_icons/earth.png" alt="Refresh Page">
+            </div>
+            <div class="planets-icon-container">
+                <img id="mars-icon" class="planets-icon" src="img/planets_icons/mars.png" alt="Refresh Page">
+            </div>
+            <div class="planets-icon-container">
+                <img id="jupiter-icon" class="planets-icon" src="img/planets_icons/jupiter.png" alt="Refresh Page">
+            </div>
+            <div class="planets-icon-container">
+                <img id="saturn-icon" class="planets-icon" src="img/planets_icons/saturn.png" alt="Refresh Page">
+            </div>
+            <div class="planets-icon-container">
+                <img id="uranus-icon" class="planets-icon" src="img/planets_icons/uranus.png" alt="Refresh Page">
+            </div>
+            <div class="planets-icon-container">
+                <img id="neptune-icon" class="planets-icon" src="img/planets_icons/neptune.png" alt="Refresh Page">
+            </div>
+        </div>
+        <div id="planets-content-box">
+            <div id="text-container">
+                <h1 id="planet-name">Sun</h1>
+                <p id="planet-information">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                </p>
+                <button class="ctrl-btn" id="back-btn">Back</button>
+                <button class="ctrl-btn" id="next-btn">Next</button>
+            </div>
+            <div id="img-container">
+                <img id="planet-img" src="img/planets_imgs/sun.png" alt="Refresh Page">
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>
