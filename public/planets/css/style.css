@@ -328,6 +328,11 @@ a {
   display: none;
 }
 
+#back-btn:hover {
+  transition: 0.4s;
+  background-color: #999999;
+}
+
 #next-btn {
   border-radius: var(--normal-radius);
   border: none;
@@ -339,4 +344,21 @@ a {
   line-height: 34px;
   color: #ffffff;
   /* margin-left: 15px; */
+}
+
+#next-btn:hover {
+  transition: 0.4s;
+  background-color: #fa8405;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1436px) {
+  #img-container {
+    display: none;
+  }
+
+  #planet-information {
+    margin-right: 30px;
+  }
 }

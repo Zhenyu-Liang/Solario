@@ -1,3 +1,5 @@
+let nextBtn = document.getElementById("next-btn");
+let backBtn = document.getElementById("back-btn");
 let planetName = document.getElementById("planet-name");
 let planetInformation = document.getElementById("planet-information");
 let planetImage = document.getElementById("planet-img");
@@ -46,10 +48,27 @@ function changePlanet() {
 	currentViewPlanet.classList.add("viewing");
 	changeViewPlanet("add");
 
+	backBtn.style.display = "inline";
+	nextBtn.style.display = "inline";
+
+
 	let currentPlanetData = planetsData[planetOrder[currentPlanet]];
 	planetName.innerHTML = currentPlanetData.title;
 	planetInformation.innerHTML = currentPlanetData.information;
 	planetImage.src = currentPlanetData.img;
+
+	if(currentPlanet == 0) {
+		backBtn.style.display = "none";
+	}
+
+	if(currentPlanet > 0) {
+		backBtn.style.display = "inline";
+	}
+
+	if(currentPlanet == 8) {
+		nextBtn.style.display = "none";
+	}
+
 }
 
 
@@ -58,12 +77,6 @@ let planetImages = document.querySelectorAll(".planets-icon-container");
 for(let planetImg of planetImages) {
 	planetImg.onclick = changePlanet;
 }
-
-
-let nextBtn = document.getElementById("next-btn");
-let backBtn = document.getElementById("back-btn");
-
-
 
 nextBtn.addEventListener("click", () => {
 	currentPlanet++;
@@ -91,6 +104,11 @@ nextBtn.addEventListener("click", () => {
 	currentViewPlanet.classList.add("viewing");
 	changeViewPlanet("add");
 
+	let currentPlanetData = planetsData[planetOrder[currentPlanet]];
+	planetName.innerHTML = currentPlanetData.title;
+	planetInformation.innerHTML = currentPlanetData.information;
+	planetImage.src = currentPlanetData.img;
+
 })
 
 backBtn.addEventListener("click", () => {
@@ -114,5 +132,9 @@ backBtn.addEventListener("click", () => {
 	currentViewPlanet.classList.add("viewing");
 	changeViewPlanet("add");
 
+	let currentPlanetData = planetsData[planetOrder[currentPlanet]];
+	planetName.innerHTML = currentPlanetData.title;
+	planetInformation.innerHTML = currentPlanetData.information;
+	planetImage.src = currentPlanetData.img;
 })
 
