@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/simulation.css">
+
+	<!-- JQuery -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/simulation.js" defer></script>	
+	
+	<title>Solario</title>
+
+</head>
+<body>
+
+	<h3 id="back">Back</h3>
+
+	<!-- Main Title -->
+	<h1 id="main-title">The Solar System</h1>
+
+	<!-- Planet List -->
+	<ul id="planet-list">
+		<li id="sun-link">
+			<h3>Sun</h3>
+		</li>
+		<li id="mercury-link">
+			<h3>Mercury</h3>
+		</li>
+		<li id="venus-link">
+			<h3>Venus</h3>
+		</li>
+		<li id="earth-link">
+			<h3>Earth</h3>
+		</li>
+		<li id="mars-link">
+			<h3>Mars</h3>
+		</li>
+		<li id="jupiter-link">
+			<h3>Jupiter</h3>
+		</li>
+		<li id="saturn-link">
+			<h3>Saturn</h3>
+		</li>
+		<li id="uranus-link">
+			<h3>Uranus</h3>
+		</li>
+		<li id="neptune-link">
+			<h3>Neptune</h3>
+		</li>
+	</ul>
+
+	<!-- Planet Orbit -->
+	<div id="orbit-container">
+		<div id="sun"></div>
+		<div id="mercury-orbit" class="orbit">
+			<div id="mercury"></div>
+		</div>
+		<div id="venus-orbit" class="orbit">
+			<div id="venus"></div>
+		</div>
+		<div id="earth-orbit" class="orbit">
+			<div id="earth"></div>
+		</div>
+		<div id="mars-orbit" class="orbit">
+			<div id="mars"></div>
+		</div>
+		<div id="jupiter-orbit" class="orbit">
+			<div id="jupiter"></div>
+		</div>
+		<div id="saturn-orbit" class="orbit">
+			<div id="saturn"></div>
+			<div id="saturn-ring"></div>
+		</div>
+		<div id="uranus-orbit" class="orbit">
+			<div id="uranus"></div>
+		</div>
+		<div id="neptune-orbit" class="orbit">
+			<div id="neptune"></div>
+		</div>
+	</div>
+
+</body>
+</html>

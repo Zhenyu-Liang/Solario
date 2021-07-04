@@ -1,4 +1,9 @@
 let homeLink = document.getElementById("home-link");
+let simulationBtn = document.getElementById("simulation-btn");
+
+simulationBtn.addEventListener("click", () => {
+	window.location.href = window.location.protocol + "//" + window.location.host + "/simulation";
+})
 
 homeLink.addEventListener("click", () => {
 	window.location.href = window.location.protocol + "//" + window.location.host;

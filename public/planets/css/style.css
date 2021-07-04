@@ -253,6 +253,30 @@ a {
   margin-top: 20px;
 }
 
+/* simulation btn */
+
+#simulation-btn {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background: #1bc0db;
+  border-radius: 10px;
+  border: none;
+  width: 133px;
+  height: 40px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+#simulation-btn:hover {
+  transition: 0.4s;
+  background: #16a0b6;
+}
+
 /* Main Content */
 
 #main-content-box {
@@ -353,12 +377,76 @@ a {
 
 /* Responsiveness */
 
-@media screen and (max-width: 1436px) {
+@media screen and (max-width: 1660px) {
   #img-container {
     display: none;
   }
 
   #planet-information {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #planet-name {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  #planet-information {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #planet-name {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  #planet-information {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #back-btn {
+    width: 99px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #next-btn {
+    width: 99px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #simulation-btn {
+    width: 103px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 590px), (max-height: 653px) {
+  *:not(body):not(html) {
+    display: none;
+  }
+
+  #hidden-small-screen-text {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+
+  body {
+    background: white;
   }
 }

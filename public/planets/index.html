@@ -53,51 +53,60 @@
         </nav>
     </header>
 
-    <button id="simulation-btn">simulation</button>
-    <main id="main-content-box">
-        <div id="planets-navbar">
-            <div class="planets-icon-container viewing">
-                <img id="sun-icon" class="planets-icon" src="img/planets_icons/sun.png" alt="Refresh Page">
+    <div id="main-container">
+
+        <main id="main-content-box">
+            <div id="planets-navbar">
+                <div class="planets-icon-container viewing">
+                    <img id="sun-icon" class="planets-icon" src="img/planets_icons/sun.png" alt="Refresh Page">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="mercury-icon" class="planets-icon" src="img/planets_icons/mercury.png" alt="Refresh Page" width="55" height="55">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="venus-icon" class="planets-icon" src="img/planets_icons/venus.png" alt="Refresh Page">
+                </div class="planets-icon-container">
+                <div class="planets-icon-container">
+                    <img id="earth-icon" class="planets-icon" src="img/planets_icons/earth.png" alt="Refresh Page">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="mars-icon" class="planets-icon" src="img/planets_icons/mars.png" alt="Refresh Page">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="jupiter-icon" class="planets-icon" src="img/planets_icons/jupiter.png" alt="Refresh Page">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="saturn-icon" class="planets-icon" src="img/planets_icons/saturn.png" alt="Refresh Page">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="uranus-icon" class="planets-icon" src="img/planets_icons/uranus.png" alt="Refresh Page">
+                </div>
+                <div class="planets-icon-container">
+                    <img id="neptune-icon" class="planets-icon" src="img/planets_icons/neptune.png" alt="Refresh Page">
+                </div>
             </div>
-            <div class="planets-icon-container">
-                <img id="mercury-icon" class="planets-icon" src="img/planets_icons/mercury.png" alt="Refresh Page" width="55" height="55">
+            <div id="planets-content-box">
+                <button id="simulation-btn">simulation</button>
+                <div id="text-container">
+                    <h1 id="planet-name">Sun</h1>
+                    <p id="planet-information">
+                        Sun, a star located at the center of our solar system. It was born approximately 4.6 billion years ago. It is by far the largest object and about one million Earths could fit inside the sun. The surface of the sun is about 5,500 degrees Celsius (10,000 degrees Fahrenheit). The sun is important because without sun's heat and light, lifes on Earth would not exist. 
+                    </p>
+                    <button class="ctrl-btn" id="back-btn">Back</button>
+                    <button class="ctrl-btn" id="next-btn">Next</button>
+                </div>
+                <div id="img-container">
+                    <img id="planet-img" src="img/planets_imgs/sun.png" alt="Refresh Page">
+                </div>
             </div>
-            <div class="planets-icon-container">
-                <img id="venus-icon" class="planets-icon" src="img/planets_icons/venus.png" alt="Refresh Page">
-            </div class="planets-icon-container">
-            <div class="planets-icon-container">
-                <img id="earth-icon" class="planets-icon" src="img/planets_icons/earth.png" alt="Refresh Page">
-            </div>
-            <div class="planets-icon-container">
-                <img id="mars-icon" class="planets-icon" src="img/planets_icons/mars.png" alt="Refresh Page">
-            </div>
-            <div class="planets-icon-container">
-                <img id="jupiter-icon" class="planets-icon" src="img/planets_icons/jupiter.png" alt="Refresh Page">
-            </div>
-            <div class="planets-icon-container">
-                <img id="saturn-icon" class="planets-icon" src="img/planets_icons/saturn.png" alt="Refresh Page">
-            </div>
-            <div class="planets-icon-container">
-                <img id="uranus-icon" class="planets-icon" src="img/planets_icons/uranus.png" alt="Refresh Page">
-            </div>
-            <div class="planets-icon-container">
-                <img id="neptune-icon" class="planets-icon" src="img/planets_icons/neptune.png" alt="Refresh Page">
-            </div>
-        </div>
-        <div id="planets-content-box">
-            <div id="text-container">
-                <h1 id="planet-name">Sun</h1>
-                <p id="planet-information">
-                    Sun, a star located at the center of our solar system. It was born approximately 4.6 billion years ago. It is by far the largest object and about one million Earths could fit inside the sun. The surface of the sun is about 5,500 degrees Celsius (10,000 degrees Fahrenheit). The sun is important because without sun's heat and light, lifes on Earth would not exist. 
-                </p>
-                <button class="ctrl-btn" id="back-btn">Back</button>
-                <button class="ctrl-btn" id="next-btn">Next</button>
-            </div>
-            <div id="img-container">
-                <img id="planet-img" src="img/planets_imgs/sun.png" alt="Refresh Page">
-            </div>
-        </div>
-    </main>
+        </main>
+
+    </div>
+
+    <!-- Text for Small Screens -->
+    <p id="hidden-small-screen-text">
+        This website doesn't support mobile devices with small screens.
+    </p> 
 
 </body>
 </html>
