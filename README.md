@@ -27,8 +27,8 @@ Website Link: https://solario-app.web.app
 
 To run Solario, you just need to:
 
-    1. Go to [Solario](https://solario-app.web.app)
-    2. Go anywhere you like and explore!
+1. Go to [Solario](https://solario-app.web.app)
+2. Go anywhere you like and explore!
 
 ## Creator
 
