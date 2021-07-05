@@ -14,19 +14,19 @@ const planetsData = {
 
 	"venus": {
 		title: "Venus",
-		information: "Venus, the second planet from the Sun and it is the sixth-largest and the hottest planet in our solar system. Its surface temperature is 462 degrees Celsius and it has no moon. Its orbit period is 224,70 Earth days. ",
+		information: "Venus, the second planet from the Sun and it is the sixth-largest and the hottest planet in our solar system. Its surface temperature is 462 degrees Celsius and it has no moon. Its orbit period is 224.70 Earth days. ",
 		img: "img/planets_imgs/venus.png"
 	},
 
 	"earth": {
 		title: "Earth",
-		information: "Earth, our home planet, is the third planet from the Sun and it is the fifth-largest planet in the solar system. It is currently the planet in the universe where we've ever identified life. It takes Earth 23.934 hours to complete a rotation on its axis and 365.26 days to complete an orbit around sun.",
+		information: "Earth, our home planet, is the third planet from the Sun and it is the fifth-largest planet in the solar system. It is currently the planet in the universe where we've ever identified life. It takes Earth 23.934 hours to complete a rotation on its axis and 365.26 days to complete an orbit around the sun.",
 		img: "img/planets_imgs/earth.png"
 	},
 
 	"mars": {
 		title: "Mars",
-		information: "Mars, the fourth planet from Sun. It is one of the most explored bodies in our solar system. It is a dusty, cold, desert, world with a very thin atmosphere. The size of the planet is about half the size of Earth. A day on Mars is 24.6 hours and a year on Mars is 687 Earth days. ",
+		information: "Mars, the fourth planet from the Sun. It is one of the most explored bodies in our solar system. It is a dusty, cold, desert, world with a very thin atmosphere. The size of the planet is about half the size of Earth. A day on Mars is 24.6 hours and a year on Mars is 687 Earth days. ",
 		img: "img/planets_imgs/mars.png"
 	},
 
